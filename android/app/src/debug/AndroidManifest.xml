@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="clone.martinoyovo.gozem.flutter_gozem_ui_clone">
+    package="clone.martinoyovo.gozem">
     <!-- Flutter needs it to communicate with the running application
          to allow setting breakpoints, to provide hot reload, etc.
     -->

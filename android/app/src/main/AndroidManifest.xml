@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="clone.martinoyovo.gozem.flutter_gozem_ui_clone">
+    package="clone.martinoyovo.gozem">
    <application
-        android:label="flutter_gozem_ui_clone"
+        android:label="Flutter-Gozem-Clone"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

@@ -1,4 +1,4 @@
-package clone.martinoyovo.gozem.flutter_gozem_ui_clone
+package clone.martinoyovo.gozem
 
 import io.flutter.embedding.android.FlutterActivity
 
