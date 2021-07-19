@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
           children: [
             Text("Gozem UI Clone with Flutter", style: GoogleFonts.dmSans(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white)),
             Gap(20),
-            customRichText(title: "Date", text: "20/07/21 at 16H GMT"),
+            customRichText(title: "Date", text: "21/07/21 at 16H GMT"),
             customRichText(title: "By", text: "martinoyovo")
           ],
         ),
