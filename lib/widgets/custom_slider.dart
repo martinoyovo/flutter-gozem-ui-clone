@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gozem_ui_clone/utils/styles.dart';
+import 'package:gap/gap.dart';
 
 
-class PartnersSlider extends StatefulWidget {
+class CustomSlider extends StatefulWidget {
   @override
-  _PartnersSliderState createState() => _PartnersSliderState();
+  _CustomSliderState createState() => _CustomSliderState();
 }
 
-class _PartnersSliderState extends State<PartnersSlider> {
+class _CustomSliderState extends State<CustomSlider> {
 
   var controller = PageController();
   var currentPage = 0;
@@ -19,25 +21,40 @@ class _PartnersSliderState extends State<PartnersSlider> {
         currentPage = controller.page!.round();
       });
     });
-    return _body(size.width);
+    return _body();
   }
-  _body(double height) {
-    double _height = height/2.8;
+  _body() {
     return AnimatedContainer(
       duration: Duration(milliseconds: 300),
-      height: _height,
-      child: Stack(
-        children: [
-          PageView.builder(
-            controller: controller,
-            scrollDirection: Axis.horizontal,
-            physics: BouncingScrollPhysics(),
-            itemCount: 5,
-            itemBuilder: (context, index) {
-              return Container();
-            },
-          ),
-        ],
+      height: 170,
+      child: PageView.builder(
+        controller: controller,
+        scrollDirection: Axis.horizontal,
+        physics: BouncingScrollPhysics(),
+        itemCount: 2,
+        itemBuilder: (context, index) {
+          return ListView(
+            children: [
+              Container(
+                margin: EdgeInsets.only(right: 10),
+                height: 170,
+                decoration: BoxDecoration(
+                  color: Styles.blueColor,
+                  borderRadius: BorderRadius.circular(12)
+                ),
+              ),
+              Gap(10),
+              Container(
+                height: 10,
+                width: 10,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Styles.primaryColor
+                ),
+              )
+            ],
+          );
+        },
       ),
     );
   }

@@ -34,6 +34,7 @@ dependencies:
   gap:
   flutter_svg:
   intl:
+  get:
 
 dev_dependencies:
   flutter_test:
